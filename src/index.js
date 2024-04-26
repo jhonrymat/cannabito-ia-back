@@ -14,10 +14,14 @@ require('dotenv').config()
 const io = new Server(server, {
     maxHttpBufferSize: 1e8, /* 100MB */
     cors: {
-        origin: [`http://localhost:${process.env.CLIENT_PORT}`, `http://${process.env.SERVER_HOST}:${process.env.CLIENT_PORT}`],
+        origin: process.env.SERVER_HOST,
         methods: ['GET', 'POST']
     }
 })
+
+
+console.log('link', io)
+
 
 let assistant_instructions = ''
 let assistant_name = ''
