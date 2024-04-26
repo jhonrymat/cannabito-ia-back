@@ -622,10 +622,10 @@ io.on('connection', async (socket) => {
 
 })
 
-server.listen(process.env.SERVER_PORT, () => {
+server.listen(PORT, () => {
 
     console.log(`Starting Test Server...`, (new Date()).toLocaleTimeString())
-    console.log(`Listening on ${process.env.SERVER_HOST}:${process.env.SERVER_PORT}`)
+    console.log(`Listening on ${PORT}`)
 
 })
 
