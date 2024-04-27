@@ -14,7 +14,7 @@ require('dotenv').config()
 const io = new Server(server, {
     maxHttpBufferSize: 1e8, /* 100MB */
     cors: {
-        origin: process.env.SERVER_HOST,
+        origin: process.env.CLIENT_HOST,
         methods: ['GET', 'POST']
     }
 })
