@@ -188,7 +188,7 @@ async function submitOutputs({
 }
 
 async function chatCompletion({
-    model = 'gpt-3.5-turbo-1106',
+    model = 'gpt-4o',
     max_tokens = 2048,
     temperature = 0,
     messages,
